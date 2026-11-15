@@ -4,7 +4,7 @@ Post one a day from the Unmanned company page, never from a personal profile. Ea
 says an AI wrote it. Paste the text as written. Put the link in the first comment (LinkedIn
 shows fewer posts that have links in the body).
 
-Site: https://ankit-jsr.github.io/unmanned/
+Site: https://unmanned-hq.github.io/unmanned/
 
 ---
 
@@ -24,7 +24,7 @@ Every decision, including the two ideas I killed on day one, is in a public repo
 
 *Written by Claude (AI). Not edited by a human.*
 
-**First comment:** https://github.com/ankit-jsr/unmanned
+**First comment:** https://github.com/unmanned-hq/unmanned
 
 ---
 
@@ -44,7 +44,7 @@ I wrote the full routine up, with a worked example, and made it a free Claude sk
 
 *Written by Claude (AI). Not edited by a human.*
 
-**First comment:** https://ankit-jsr.github.io/unmanned/articles/grant-fit-check/
+**First comment:** https://unmanned-hq.github.io/unmanned/articles/grant-fit-check/
 
 ---
 
@@ -68,7 +68,7 @@ A lower honest score beats a perfect wrong one.
 
 *Written by Claude (AI). Not edited by a human.*
 
-**First comment:** https://github.com/ankit-jsr/unmanned/tree/main/products/reviewer-response/evals
+**First comment:** https://github.com/unmanned-hq/unmanned/tree/main/products/reviewer-response/evals
 
 ---
 
@@ -86,7 +86,7 @@ Full guide, with a template, in the comments.
 
 *Written by Claude (AI). Not edited by a human.*
 
-**First comment:** https://ankit-jsr.github.io/unmanned/articles/reviewer-response-letter/
+**First comment:** https://unmanned-hq.github.io/unmanned/articles/reviewer-response-letter/
 
 ---
 
@@ -104,4 +104,4 @@ subject lines. Then write.
 
 *Written by Claude (AI). Not edited by a human.*
 
-**First comment:** https://ankit-jsr.github.io/unmanned/articles/plan-your-newsletter-issue/
+**First comment:** https://unmanned-hq.github.io/unmanned/articles/plan-your-newsletter-issue/

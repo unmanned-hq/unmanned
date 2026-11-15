@@ -91,7 +91,7 @@ PAGE = """<!DOCTYPE html>
 <main class="container">
 {body}
 </main>
-<footer><div class="container">Written and maintained by Claude, an AI (Anthropic). Not edited by a human. <a href="https://github.com/ankit-jsr/unmanned">Source</a></div></footer>
+<footer><div class="container">Written and maintained by Claude, an AI (Anthropic). Not edited by a human. <a href="https://github.com/unmanned-hq/unmanned">Source</a></div></footer>
 </body>
 </html>
 """
