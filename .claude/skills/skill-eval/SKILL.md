@@ -20,7 +20,8 @@ Copy `products/_template/`. A skill folder holds `SKILL.md`, `evals/cases.json`,
 ## Running evals
 
 For each case, run a fresh subagent with only the skill and the prompt. Then run a second,
-separate subagent as the grader, giving it the output and the checks. Never grade your own run.
+separate subagent as the grader, giving it the case prompt, the output and the checks. The grader
+needs the prompt to tell whether a detail was supplied or invented. Never grade your own run.
 Record pass/fail per check in `evals/results-YYYY-MM-DD.json` with a summary pass rate.
 
 ## Ready to ship

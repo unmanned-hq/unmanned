@@ -1,0 +1,222 @@
+{
+  "skill": "grant-fit-screener",
+  "run_date": "2026-11-15",
+  "method": "fresh subagent per case with only SKILL.md and the prompt; separate grader given the prompt, output and checks",
+  "cases": [
+    {
+      "id": "c1-high-fit",
+      "checks": [
+        {
+          "check": "Returns a verdict of High.",
+          "result": "PASS",
+          "reason": "Verdict reads '**High.**' with Partial/Strong/Strong, which fits the skill's 'at most one Partial' rule and all eligibility criteria are confirmed."
+        },
+        {
+          "check": "Identifies at least 3 funder priorities quoted directly from the RFP text.",
+          "result": "PASS",
+          "reason": "Five quoted bullets, e.g. \"restore riparian buffers\" and \"reduce agricultural runoff\", appear verbatim in the RFP."
+        },
+        {
+          "check": "Scores all three dimensions (mission alignment, eligibility, capacity) explicitly.",
+          "result": "PASS",
+          "reason": "The table scores Mission alignment Partial, Eligibility Strong, Capacity Strong."
+        },
+        {
+          "check": "Includes 3 watch-out items, each tied to a requirement or priority stated in the RFP text; does not present generic advice (e.g. outcome metrics) as an RFP requirement.",
+          "result": "PASS",
+          "reason": "Three items, each headed by an RFP quote (\"Reduce agricultural runoff.\", \"Restore riparian buffers.\", \"Operating in the Great Lakes watershed.\"), with no generic metrics/evaluation advice passed off as a requirement."
+        },
+        {
+          "check": "Does not write any proposal narrative or draft grant sections.",
+          "result": "PASS",
+          "reason": "The output is a fit memo only; the watch-outs say what a draft must cover without drafting any text."
+        },
+        {
+          "check": "Keeps the full memo under 400 words.",
+          "result": "PASS",
+          "reason": "About 300 words (327 by raw wc including markdown)."
+        },
+        {
+          "check": "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed.",
+          "result": "PASS",
+          "reason": "Every specific (12 years, $1.2M, 14 projects, NRCS/EPA GLRI/Kresge, $50,000–$150,000) comes from the prompt and staffing is marked 'Not stated'; '12 years of restoration work' is a close inference from a 12-year-old land trust focused on restoration."
+        }
+      ]
+    },
+    {
+      "id": "c2-low-fit-wrong-mission",
+      "checks": [
+        {
+          "check": "Returns a verdict of Low.",
+          "result": "PASS",
+          "reason": "Verdict reads '**Low.** ... so don't apply.'"
+        },
+        {
+          "check": "Identifies at least two specific blockers (geography mismatch and mission mismatch).",
+          "result": "PASS",
+          "reason": "Blockers list includes '1. **Geography.**' (Texas-based vs Chicago) and '4. **Mission mismatch.**', plus organisation type and no prior outcomes."
+        },
+        {
+          "check": "Scores Eligibility as Weak due to Texas-only requirement.",
+          "result": "PASS",
+          "reason": "Eligibility row is 'Weak' citing 'requires applicants to be Texas-based ... You are ... based in Chicago, Illinois.'"
+        },
+        {
+          "check": "Scores Mission alignment as Weak.",
+          "result": "PASS",
+          "reason": "Mission alignment row is 'Weak'."
+        },
+        {
+          "check": "Does not soften the Low verdict or suggest the org can overcome the eligibility block.",
+          "result": "PASS",
+          "reason": "States 'no amount of proposal writing can change it' and 'Partnering or changing how you frame the proposal won't clear blockers 1 and 2'."
+        },
+        {
+          "check": "Does not write any proposal text.",
+          "result": "PASS",
+          "reason": "No proposal text; the output ends by redirecting effort to other funders."
+        }
+      ]
+    },
+    {
+      "id": "c3-medium-fit",
+      "checks": [
+        {
+          "check": "Returns a verdict of Medium.",
+          "result": "PASS",
+          "reason": "Verdict reads '**Medium.**' with Partial/Strong/Partial and no Weak, matching the skill's Medium rule."
+        },
+        {
+          "check": "Notes that mission alignment is Partial (adjacent population, indirect housing connection).",
+          "result": "PASS",
+          "reason": "Mission row is 'Partial': employment for people leaving incarceration, 'though your clients face eviction and you have run one financial coaching pilot.'"
+        },
+        {
+          "check": "Notes that capacity is Partial or Weak (no housing programme, one tangential pilot).",
+          "result": "PASS",
+          "reason": "Capacity row is 'Partial': 'no current housing programming ... and only one partnered pilot in a priority area.'"
+        },
+        {
+          "check": "Provides at least 2 concrete strengthening actions the org can take before applying.",
+          "result": "PASS",
+          "reason": "Three actions: formal housing partner with MOU, document the financial coaching pilot, measure clients' eviction risk from intake data."
+        },
+        {
+          "check": "Does not return High or Low.",
+          "result": "PASS",
+          "reason": "Final verdict is Medium; Low is mentioned only as a conditional if the funder's wording turns out to be a hard rule."
+        },
+        {
+          "check": "Every claim about the org (programmes, partners, staff, numbers, results) appears in the org profile; strengthening actions are framed as things to do, not things the org already has.",
+          "result": "PASS",
+          "reason": "Org claims (Aurora, $400,000, seven years, one pilot with a housing nonprofit, 'many of our clients face eviction') all come from the profile; the actions say 'Write down what the pilot delivered' and 'Pull intake or case data' rather than claiming results or data exist."
+        },
+        {
+          "check": "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed.",
+          "result": "PASS",
+          "reason": "All numbers ($150,000, $400,000) come from the prompt, it notes the eviction claim 'gives no number', and it does not invent funder history; the 'program officer' mention is a generic suggestion, not a funder fact."
+        }
+      ]
+    },
+    {
+      "id": "c4-missing-org-profile",
+      "checks": [
+        {
+          "check": "Asks for the org profile before proceeding.",
+          "result": "PASS",
+          "reason": "'Before I can score fit, I need a short profile of the organisation that would apply.'"
+        },
+        {
+          "check": "Does not issue a fit verdict without org information.",
+          "result": "PASS",
+          "reason": "No scores or verdict; it promises the memo 'Once I have the profile'."
+        },
+        {
+          "check": "Does not invent or assume org details.",
+          "result": "PASS",
+          "reason": "It states 'nothing about your org yet' and asks questions without asserting any org fact."
+        },
+        {
+          "check": "Specifies what information it needs (mission, geography, budget, track record).",
+          "result": "PASS",
+          "reason": "Bullets request Mission, Primary geography, Population served, Annual budget, and Recent relevant projects (track record), plus the three eligibility confirmations."
+        }
+      ]
+    },
+    {
+      "id": "c5-redirect-from-drafting",
+      "checks": [
+        {
+          "check": "Declines to write the proposal.",
+          "result": "PASS",
+          "reason": "Opens with 'I can't write the proposal.'"
+        },
+        {
+          "check": "Redirects to the fit screening purpose of the skill.",
+          "result": "PASS",
+          "reason": "'Here is the fit screen, so you know whether the drafting time is worth it.'"
+        },
+        {
+          "check": "Still performs the fit assessment since both inputs are present.",
+          "result": "PASS",
+          "reason": "Gives priorities, a three-dimension score table, a High verdict and a watch-out list."
+        },
+        {
+          "check": "Explains what the skill does and does not do.",
+          "result": "PASS",
+          "reason": "'This tool only screens whether an opportunity is worth a full proposal, and it doesn't draft narrative or grant sections.'"
+        },
+        {
+          "check": "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed.",
+          "result": "PASS",
+          "reason": "Specifics ($2.1M, 15 years, 300+ projects, Portland, $80,000–$200,000) come from the prompt, ventilation experience is marked '(not stated)', and possible extra rules (match, location, prior funding) are framed as hypotheticals to paste and re-check, not as RFP facts."
+        }
+      ]
+    },
+    {
+      "id": "c6-hard-complex-eligibility",
+      "checks": [
+        {
+          "check": "Works through eligibility requirements one by one rather than giving a summary verdict immediately.",
+          "result": "PASS",
+          "reason": "Before the verdict, the Eligibility row lists each criterion in turn (Look-Alike belief, HPSA, OMB rural, prior-funding), and the blockers then take each one separately in items 1–5."
+        },
+        {
+          "check": "Flags the unconfirmed HPSA designation as a blocker that must be verified before applying.",
+          "result": "PASS",
+          "reason": "Blocker 2 'HPSA designation is unconfirmed ... This is a hard requirement', plus 'Clear blockers 1 through 4 with documentation before you spend any writing hours.'"
+        },
+        {
+          "check": "Notes that HRSA funding 4 years ago (FY2022) may or may not fall within the 'prior two award cycles' restriction and flags this as requiring confirmation.",
+          "result": "PASS",
+          "reason": "Blocker 4 says it is not stated whether the FY2022 award was an HRSA Rural Health grant or how long the cycles are, and 'If ... FY2022 falls within the prior two cycles, you are ineligible.'"
+        },
+        {
+          "check": "Does not issue a High verdict given the unconfirmed eligibility items.",
+          "result": "PASS",
+          "reason": "Verdict is '**Low.**', consistent with the rule that uncertain eligibility means Low."
+        },
+        {
+          "check": "Lists the specific verifications the org must complete before applying.",
+          "result": "PASS",
+          "reason": "Blockers 1–4 name the checks (documented Look-Alike status, HPSA designation, OMB rural designation, whether FY2022 was a Rural Health grant and cycle length) and blocker 5 adds the match capacity."
+        },
+        {
+          "check": "Does not assert whether the service area is HPSA-designated or rural under OMB standards, or the length of an HRSA award cycle, unless the prompt says so; lists these as items to verify.",
+          "result": "PASS",
+          "reason": "Rural status is 'Not stated', HPSA is 'unconfirmed', and cycle length is listed as not stated; it never calls Bozeman rural or gives a cycle length."
+        },
+        {
+          "check": "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed.",
+          "result": "PASS",
+          "reason": "Budget, staffing, award size and match capacity are marked 'not stated'; the one derived number, '$50,000' (10% of the $500,000 top award), is arithmetic on prompt figures rather than an outside fact."
+        }
+      ]
+    }
+  ],
+  "total_passed": 36,
+  "total_checks": 36,
+  "pass_rate": 1.0,
+  "outputs": "evals/outputs-2026-11-15/",
+  "notes": "Re-run after an audit found checks that rewarded assumed eligibility facts (c1, c3) and narrow invention checks. Close calls graded PASS: c1 says '12 years of restoration work' (inferred from '12-year-old land trust focused on restoration'); c3 reads 'working to prevent eviction' as a description, not a hard rule, and says the verdict drops to Low if it is one; c6 computes a $50,000 match as 10% of the top award. Not covered by any check: c6 runs about 408 words, over the skill's 400-word limit."
+}

@@ -23,7 +23,7 @@ LINK = re.compile(r"\[[^\]]*\]\(([^)\s]+)\)")
 SKIP_DIRS = {".git", "node_modules", ".venv", "content/rendered", "content/articles"}  # articles: links checked in the built site/ HTML
 
 LEDGER_HEADER = ["date", "type", "category", "description", "amount_inr", "counterparty", "evidence"]
-METRICS_HEADER = ["week", "date", "substack_subscribers", "github_stars", "waitlist_signups",
+METRICS_HEADER = ["week", "date", "substack_subscribers", "github_stars", "skill_downloads", "waitlist_signups",
                   "preorders", "revenue_inr", "spend_inr"]
 FACTS_HEADER = ["key", "value", "source"]
 

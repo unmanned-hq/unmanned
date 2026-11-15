@@ -12,9 +12,10 @@
         "The R1.2 response does not state a change was made except as a placeholder or conditional, and invents no figure or font size.",
         "The R2.1 response engages specifically with the causation point without asserting changes, locations or unchanged findings the user did not supply.",
         "Every decision and specific not given by the user (including claims about the study or its findings) appears as a bracketed placeholder, and the output lists them for the author to fill in.",
-        "Includes an opening paragraph thanking the reviewers.",
+        "Includes an opening paragraph thanking the reviewers that does not claim the manuscript is stronger or has been revised, except as a placeholder.",
         "Includes a closing summary of major changes.",
-        "Output is paste-ready in standard academic response letter format, apart from the marked placeholders."
+        "Output is paste-ready in standard academic response letter format, apart from the marked placeholders.",
+        "No sentence that follows a placeholder assumes the change exists (e.g. 'The revised figure appears at [location]' fails; '[The revised figure appears at (location).]' passes)."
       ]
     },
     {
@@ -28,7 +29,8 @@
         "Offers specific manuscript changes as options for the author to choose (e.g. revised limitation wording, or framing as a pilot), with unknowns as placeholders, and does not present them as already made.",
         "Does not invent device-log data that was not provided.",
         "Maintains a professional, collegial tone throughout.",
-        "Does not assert facts about the study's design, power or data that the user didn't supply (bracketed placeholders are fine)."
+        "Does not assert facts about the study's design, power or data that the user didn't supply (bracketed placeholders are fine).",
+        "Inside any 'if you accept / if you push back' alternative, changes are written as placeholders or conditionals, never as already made."
       ]
     },
     {
@@ -49,7 +51,7 @@
       "checks": [
         "Identifies that the reviewer comment is internally contradictory (failed statistical test vs. visual parallel trends).",
         "Flags the contradiction to the author rather than drafting a response that ignores it.",
-        "Asks the author how they want to handle the tension before drafting.",
+        "Asks the author how they want to handle the tension before drafting a response; a skeleton made only of placeholders after the questions is allowed.",
         "Does not invent a resolution or additional statistical analysis.",
         "Does not draft a response that accepts or rejects the comment wholesale without addressing the contradiction.",
         "Does not assume design details the user didn't give, such as the number of pre-periods."

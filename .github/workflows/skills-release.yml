@@ -1,0 +1,29 @@
+name: skills-release
+
+# Zips each free skill and publishes the zips as a GitHub release. Stable download links:
+#   https://github.com/unmanned-hq/unmanned/releases/latest/download/<skill>.zip
+# GitHub counts downloads per release asset; those counts go into company/metrics.csv.
+on:
+  push:
+    branches: [main]
+    paths: ["products/**", "scripts/package_skills.py", ".github/workflows/skills-release.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Publish skill zips
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/package_skills.py dist
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="skills-$(date -u +%Y%m%d)-${GITHUB_RUN_NUMBER}"
+          gh release create "$tag" dist/*.zip --latest \
+            --title "Free skills ($(date -u +%Y-%m-%d))" \
+            --notes "Free Claude skills from Unmanned, MIT licensed. Install guide: https://unmanned-hq.github.io/unmanned/install/"

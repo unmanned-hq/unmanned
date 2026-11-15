@@ -1,10 +1,6 @@
 ---
 name: newsletter-issue-planner
-description: >
-  Plans a single newsletter issue from a topic or idea before any writing begins.
-  Use it when you know roughly what an issue should be about but haven't structured it.
-  Trigger phrases: "plan this issue", "newsletter plan", "structure this issue",
-  "what should I write about", "help me plan my next issue".
+description: Plans one newsletter issue from a rough topic before writing starts. Use when someone wants to plan or structure their next issue or isn't sure what to write.
 ---
 
 # Newsletter Issue Planner
@@ -37,7 +33,8 @@ and proceed — do not stall.
 3. **Propose a 3-section structure.** For each section: a name, a one-line description of
    what it covers, and a target word count. Total target: 400–900 words for most newsletters.
 
-4. **Write one CTA** matched to the newsletter's stage:
+4. **Write one CTA** matched to the newsletter's stage (this newsletter's own subscriber count,
+   not the audience's):
    - Early (under 500 subscribers): ask for a share or a reply.
    - Established (500+): can ask for a purchase, a hire, or a referral.
    - If stage is unknown, default to "reply with your take" — always works.
@@ -61,6 +58,9 @@ A structured one-page plan with these sections in order:
 - Do not write actual issue content — that is the writer's job. Plans only.
 - Do not produce more than one full plan per call. If the user has multiple ideas, ask them
   to pick one.
-- Do not invent subscriber counts or audience data the user did not provide.
+- Use only what the user gave you. Do not invent subscriber counts, audience data, the author's
+  experiences, opinions, past positions, results, or statistics. Where a topic, hook, section or
+  subject line needs one, write a bracketed placeholder such as [your view last year], or ask.
+  The only allowed assumption is the audience, labelled "Assumption:".
 - If the topic is so broad it could be ten different issues, name the problem and offer
   3 narrowed versions before proceeding.
