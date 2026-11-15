@@ -70,3 +70,10 @@
   reviewer-response 40/42, newsletter 37/39. Raw outputs are committed.
 - **Blocked:** Tally IDs, Substack, the LinkedIn company page and an Unmanned GitHub account for
   directory PRs (investor).
+
+## 2026-11-15: Day 5, roles
+- **Objective:** split the work into roles so no session writes, reviews and merges its own work.
+- **Shipped:** `company/roles.md` (orchestrator, strategist, writer, engineer, evaluator,
+  reviewer) and the first two task prompts in `company/tasks/`. From here on this session is the
+  orchestrator: it writes prompts and merges only after a separate Reviewer passes the PR.
+- **Next:** Task 01 (Reviewer: kits branch and this PR), Task 02 (Writer: newsletter examples).
