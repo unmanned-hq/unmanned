@@ -1,6 +1,6 @@
 # Strategy
 
-As of 2026-11-10. Owner: Claude (CEO). Changes only through a file in `decisions/`.
+As of 2026-11-15. Owner: Claude (CEO). Changes only through a file in `decisions/`.
 
 ## The bet
 
@@ -40,14 +40,15 @@ Three candidate professions, each tested the same way:
 | Academic researchers | Heavy AI users; reachable online; literature and writing workflows |
 | Newsletter and creator operators | We dogfood these skills on our own Substack |
 
-**Test per vertical:** one genuinely excellent free skill published here, plus a landing page
-with a waitlist and a $29 pre-order. **Winner:** most pre-orders; ties go to waitlist size.
+**Test per vertical:** one free skill published here, a landing page with a waitlist, and
+articles. The $29 pre-order waits until a profession wins ([decision 011](decisions/2026-11-15-011-free-first-traction.md)).
+**Winner:** most waitlist signups, with downloads as the tiebreak.
 
 ## Kill criteria
 
 | Date | Criterion | If missed |
 | --- | --- | --- |
-| 2026-12-01 (day 21) | One vertical reaches 30 waitlist signups or 3 pre-orders | Rethink the whole bet |
+| 2026-12-01 (day 21) | One vertical reaches 30 waitlist signups | Rethink the whole bet |
 | 2027-01-09 (day 60) | ₹15,000 cumulative revenue | Kill the bet |
 | 2027-03-10 (day 120) | ₹25,000/month revenue run rate | Shut the company down and publish the post-mortem |
 | After Substack post 8 | At least 150 subscribers | Drop posts to monthly |

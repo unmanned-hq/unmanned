@@ -12,9 +12,9 @@ description: >
 ## When to use
 
 When a researcher has received peer review comments from a journal and needs to write the
-formal response letter that accompanies the revised manuscript. Run this after the author
-has decided how they want to handle each comment (accept, partially accept, or push back),
-not before.
+formal response letter that accompanies the revised manuscript. It works best after the author
+has decided how to handle each comment (accept, partially accept, or push back). If they
+haven't, it still drafts, with those decisions left as placeholders.
 
 ## Inputs
 
@@ -37,6 +37,11 @@ If your decisions or changes are missing for some comments, still draft the lett
 - Write every unknown specific as a bracketed placeholder, e.g. `[section]`, `[matching
   criteria you used]`, `[new figure size]`. This covers claims about the study too, such
   as its design, power or whether findings changed.
+- The same rule holds inside "if you accept / if you push back" alternatives. Picking a
+  branch is the author's decision, not a record of what they did, so changes in a branch
+  are still written as `[have … / will …]` unless the author confirmed them.
+- A sentence that follows a placeholder can't assume the change exists. Bracket it too:
+  "[The revised figure appears at (location).]", not "The revised figure appears at [location]."
 
 End with a short list of the decisions and placeholders to fill in. Never fill a gap with a
 plausible-sounding detail.
@@ -60,8 +65,10 @@ plausible-sounding detail.
    - For (C): cite evidence (from the paper, the literature, or logic) for the disagreement.
      Do not dismiss the reviewer — engage with the substance.
 
-4. **Write an opening paragraph** that thanks the reviewers, notes the number of comments
-   addressed, and states that the manuscript is stronger for it. Keep it to 3 sentences.
+4. **Write an opening paragraph** that thanks the reviewers and notes the number of comments
+   addressed. Say the manuscript has been revised only if the author confirmed changes;
+   otherwise write "[has been revised / will be revised]". Don't claim it is stronger unless
+   the author said so. Keep it to 3 sentences.
 
 5. **Write a closing summary** listing major structural changes in one bullet per change.
 
