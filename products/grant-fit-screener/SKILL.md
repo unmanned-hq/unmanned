@@ -33,7 +33,7 @@ If either input is missing, ask for it before proceeding.
 2. **Score fit on three dimensions.** For each, give one of: Strong / Partial / Weak.
    - **Mission alignment** — does the org's work directly match the funder's stated priorities?
    - **Eligibility** — does the org meet every hard eligibility criterion (geography, type,
-     budget size, prior funding restrictions)?
+     budget size, prior funding restrictions)? A criterion the profile does not address is unconfirmed, not met.
    - **Capacity** — does the org have the track record or staff to deliver what the funder
      expects at this award level?
 
@@ -42,8 +42,8 @@ If either input is missing, ask for it before proceeding.
    - **Medium** — one or two dimensions are Partial with no Weak.
    - **Low** — any dimension is Weak, or eligibility is uncertain.
 
-4. **For High:** list the 3 RFP requirements most likely to be underdeveloped in a first draft
-   (the gaps that lose funded proposals, not the ones that are obvious).
+4. **For High:** list the 3 requirements stated in the RFP that are most likely to be
+   underdeveloped in a first draft. Don't present general grant advice as an RFP requirement.
 
 5. **For Medium:** list 2–3 concrete actions the org can take before submitting to move from
    Partial to Strong on the weak dimensions.
@@ -64,6 +64,9 @@ Keep the whole memo under 400 words.
 
 - Do not write any proposal narrative or draft any grant sections.
 - Do not estimate award probability as a percentage.
-- Do not invent details about the org if they were not provided — ask instead.
+- Use only facts in the RFP and org profile. Do not state anything about the org, the funder
+  (past grantees, preferences, typical awards) or external designations (HPSA, rural status,
+  award cycles) that the user did not supply. If the memo needs a missing fact, write
+  "Not stated" and treat it as unconfirmed. If the whole org profile is missing, ask for it.
 - Do not give a High verdict when any eligibility criterion is unconfirmed.
 - Do not use hedge phrases like "it depends" without immediately saying what it depends on.

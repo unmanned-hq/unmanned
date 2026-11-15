@@ -3,15 +3,16 @@
   "cases": [
     {
       "id": "c1-high-fit",
-      "prompt": "Screen this for fit.\n\nRFP: The Great Lakes Environmental Fund invites proposals from 501(c)(3) nonprofits operating in the Great Lakes watershed to restore riparian buffers and reduce agricultural runoff. Awards of $50,000–$150,000. Applicants must have at least 3 years of environmental restoration experience and a minimum annual budget of $200,000.\n\nOrg profile: We are a 12-year-old land trust based in Michigan, focused on restoring wetlands and stream corridors in the lower Great Lakes watershed. Annual budget $1.2M. We have completed 14 riparian restoration projects and received prior funding from NRCS, EPA Great Lakes Restoration Initiative, and the Kresge Foundation.",
+      "prompt": "Screen this for fit.\n\nRFP: The Great Lakes Environmental Fund invites proposals from 501(c)(3) nonprofits operating in the Great Lakes watershed to restore riparian buffers and reduce agricultural runoff. Awards of $50,000–$150,000. Applicants must have at least 3 years of environmental restoration experience and a minimum annual budget of $200,000.\n\nOrg profile: We are a 12-year-old 501(c)(3) land trust based in Michigan, focused on restoring wetlands and stream corridors in the lower Great Lakes watershed. Annual budget $1.2M. We have completed 14 riparian restoration projects and received prior funding from NRCS, EPA Great Lakes Restoration Initiative, and the Kresge Foundation.",
       "input_files": [],
       "checks": [
         "Returns a verdict of High.",
         "Identifies at least 3 funder priorities quoted directly from the RFP text.",
         "Scores all three dimensions (mission alignment, eligibility, capacity) explicitly.",
-        "Includes a list of watch-out items (requirements most likely to be underdeveloped), not just a congratulations.",
+        "Includes 3 watch-out items, each tied to a requirement or priority stated in the RFP text; does not present generic advice (e.g. outcome metrics) as an RFP requirement.",
         "Does not write any proposal narrative or draft grant sections.",
-        "Keeps the full memo under 400 words."
+        "Keeps the full memo under 400 words.",
+        "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed."
       ]
     },
     {
@@ -29,7 +30,7 @@
     },
     {
       "id": "c3-medium-fit",
-      "prompt": "Is this worth pursuing?\n\nRFP: The Metro Housing Stability Fund seeks proposals from nonprofits in the Denver metro area working to prevent eviction and homelessness. Priorities: legal aid, emergency rental assistance, and financial coaching for at-risk renters. Awards $30,000–$100,000. Applicants must have at least 2 years of housing stability programming and an annual budget over $150,000.\n\nOrg profile: We are a workforce development nonprofit in Aurora, Colorado (Denver metro). We serve adults recently released from incarceration, helping them find employment. Annual budget $400,000, founded 7 years ago. We do not currently have housing programming, but many of our clients face eviction. We partnered once with a housing nonprofit on a pilot financial coaching workshop.",
+      "prompt": "Is this worth pursuing?\n\nRFP: The Metro Housing Stability Fund seeks proposals from nonprofits in the Denver metro area working to prevent eviction and homelessness. Priorities: legal aid, emergency rental assistance, and financial coaching for at-risk renters. Awards $30,000–$100,000. Applicants must have an annual budget over $150,000; housing programming experience is preferred.\n\nOrg profile: We are a workforce development nonprofit in Aurora, Colorado (Denver metro). We serve adults recently released from incarceration, helping them find employment. Annual budget $400,000, founded 7 years ago. We do not currently have housing programming, but many of our clients face eviction. We partnered once with a housing nonprofit on a pilot financial coaching workshop.",
       "input_files": [],
       "checks": [
         "Returns a verdict of Medium.",
@@ -37,7 +38,8 @@
         "Notes that capacity is Partial or Weak (no housing programme, one tangential pilot).",
         "Provides at least 2 concrete strengthening actions the org can take before applying.",
         "Does not return High or Low.",
-        "Does not invent programme details the org did not mention."
+        "Every claim about the org (programmes, partners, staff, numbers, results) appears in the org profile; strengthening actions are framed as things to do, not things the org already has.",
+        "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed."
       ]
     },
     {
@@ -59,7 +61,8 @@
         "Declines to write the proposal.",
         "Redirects to the fit screening purpose of the skill.",
         "Still performs the fit assessment since both inputs are present.",
-        "Explains what the skill does and does not do."
+        "Explains what the skill does and does not do.",
+        "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed."
       ]
     },
     {
@@ -71,7 +74,9 @@
         "Flags the unconfirmed HPSA designation as a blocker that must be verified before applying.",
         "Notes that HRSA funding 4 years ago (FY2022) may or may not fall within the 'prior two award cycles' restriction and flags this as requiring confirmation.",
         "Does not issue a High verdict given the unconfirmed eligibility items.",
-        "Lists the specific verifications the org must complete before applying."
+        "Lists the specific verifications the org must complete before applying.",
+        "Does not assert whether the service area is HPSA-designated or rural under OMB standards, or the length of an HRSA award cycle, unless the prompt says so; lists these as items to verify.",
+        "States no fact about the org, the funder, or any number that is not in the prompt; missing facts are marked 'Not stated' or unconfirmed."
       ]
     }
   ]
