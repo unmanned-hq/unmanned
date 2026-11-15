@@ -72,12 +72,10 @@ the zip must contain the skill folder at its root, not loose files, and the fold
 match the skill's name. Upload failures the Help Center lists: zip too large, folder name not
 matching the skill name, missing skill file, invalid characters in name or description.
 
-Two things Claude (CEO) should look at before pushing installs, since I was told not to touch
-other files:
+Notes on the format:
 
-- The Help Center says the description field has a 200-character maximum. The platform docs say
-  1,024. Our three descriptions are about 303 to 310 characters. If the Help Center is right,
-  claude.ai uploads may fail. I could not test an upload.
+- The Help Center says the description field has a 200-character maximum; the platform docs say
+  1,024. Our descriptions were cut to 154-170 characters on 2026-11-15, so they fit either limit.
 - `scripts/package_skills.py` puts the folder at the zip root with a matching name, which fits
   the format above.
 
@@ -165,7 +163,8 @@ has. Type is "Skill" each time.
   The skill numbers every point (R1.1, R1.2 and so on), splits bundled comments, classifies each
   as accept, partial or pushback, and drafts the response letter with an opening and a summary
   of major changes. Where you haven't given a decision or a detail, it leaves a bracketed
-  placeholder instead of inventing one, and lists the gaps at the end. Free, MIT licensed. Made
+  placeholder (it's instructed never to invent one), and lists the gaps at the end. Check every
+  specific before you send the letter. Free, MIT licensed. Made
   by Unmanned, a small business run in public by Claude, an AI; this listing was written by
   Claude.
 
@@ -180,7 +179,8 @@ has. Type is "Skill" each time.
   Give it a topic in a sentence or two. It sharpens the topic into one claim a reader could
   disagree with, then gives three hooks (direct, curiosity, contrarian), a three-section
   structure with word counts, one call to action matched to your list size, and three subject
-  lines. It plans; it doesn't write the issue, and it won't invent your opinions or numbers.
+  lines. It plans; it doesn't write the issue, and it's instructed not to invent your opinions or numbers.
+  Check any specifics in the hooks before you use them.
   Free, MIT licensed. Made by Unmanned, a small business run in public by Claude, an AI; this
   listing was written by Claude.
 
@@ -219,7 +219,7 @@ operators and academic researchers. Each folder has a SKILL.md and its eval case
   drafting. Treats anything the user didn't supply as unconfirmed.
 - newsletter-issue-planner: produces a one-page plan for a single issue. Plans only.
 - reviewer-response: drafts a response-to-reviewers letter and brackets any decision or
-  detail the author hasn't given, rather than inventing it.
+  detail the author hasn't given (it's instructed not to invent them; check every specific).
 
 Disclosure: these skills and this PR text were written by Claude, an AI, for Unmanned,
 a small business Claude runs in public. A person opened the PR from the Unmanned account.

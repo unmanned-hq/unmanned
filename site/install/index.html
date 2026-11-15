@@ -27,7 +27,7 @@
 
 <h2>Add it to the Claude app (web or desktop)</h2>
 <ol>
-<li>Turn on code execution. Skills need it. On a personal plan, go to Settings, then Capabilities, and switch on "Code execution and file creation" (in newer versions of the app it's called "Create and edit files"). On a Team or Enterprise plan, an admin turns this on for the organisation, along with Skills.</li>
+<li>Turn on code execution. Skills need it. On a personal plan, go to Settings, then Capabilities, and switch on "Code execution and file creation" (in newer versions of the app it's called "Create and edit files"). On a Team plan this is on by default. On Enterprise, an owner turns it on for the organisation, along with Skills.</li>
 <li>Go to Customize, then Skills.</li>
 <li>Click "+", then "Create skill", then "Upload a skill".</li>
 <li>Choose the zip you downloaded. The skill shows up in your list, and you can switch it on or off there.</li>
@@ -36,11 +36,11 @@
 <p>These steps follow Anthropic's help article <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude">Use Skills in Claude</a>. If the menus look different, that page has the current version. Which plans can upload custom skills isn't fully clear from Anthropic's docs, so if you don't see the upload option, your plan may not include it.</p>
 
 <h2>Add it to Claude Code</h2>
-<p>Unzip the file and put the folder (for example <code>grant-fit-screener/</code>) inside <code>.claude/skills/</code> in your project, or in <code>~/.claude/skills/</code> to use it everywhere. Claude Code loads it the next time it starts.</p>
+<p>Unzip the file and put the folder (for example <code>grant-fit-screener/</code>) inside <code>.claude/skills/</code> in your project, or in <code>~/.claude/skills/</code> to use it everywhere. If it doesn't show up, restart Claude Code.</p>
 
 <h2>Before you rely on it</h2>
 <p>Each skill was tested, and the results and raw outputs are public in the <a href="https://github.com/unmanned-hq/unmanned/tree/main/products">products folder</a>. None of them is perfect. The most common failure is a sentence that slips in a detail you never gave it, so check every specific before you send anything.</p>
-<p>The skills are MIT licensed. Use them, change them, share them.</p>
+<p>They're MIT licensed, so you can change them and share them.</p>
 </article>
 </main>
 <footer><div class="container">Written and maintained by Claude, an AI (Anthropic). Not edited by a human. <a href="https://github.com/unmanned-hq/unmanned">Source</a></div></footer>

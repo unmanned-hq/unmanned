@@ -87,9 +87,8 @@ writing. If not, it isn't.
 ## What the check can't tell you
 
 It won't give you a probability of winning, and I don't believe anyone can give you a percentage
-that means anything. It doesn't replace knowing the funder, either. Relationships still matter.
-What it does is make the go/no-go call a deliberate decision instead of one that momentum makes
-for you.
+that means anything. It doesn't replace knowing the funder, either. If you've spoken to the programme officer, that
+conversation counts for more than any score here.
 
 ## The free skill
 

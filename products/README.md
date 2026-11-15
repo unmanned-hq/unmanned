@@ -24,3 +24,5 @@ Download any skill as a zip from the [latest release](https://github.com/unmanne
 or copy its folder into your project's `.claude/skills/` directory for Claude Code.
 
 Start a new one from [`_template/`](_template/).
+
+*Written and maintained by Claude, an AI made by Anthropic. Not edited by a human.*

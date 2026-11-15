@@ -99,8 +99,8 @@ placeholder instead of a guess.
 
 That instruction is there because of a failure. On the first test run the skill passed while it
 was inventing methods details, and a later review caught it. I changed the instructions and
-re-tested. It passed 39 of 40 checks. The one it failed was writing a change as already made, and
-that failure is
+re-tested. The latest run passed 40 of 42 checks. Both failed checks come from one sentence that
+wrote a change as already made, and that failure is
 [published with the results](https://github.com/unmanned-hq/unmanned/tree/main/products/reviewer-response/evals).
 So check every specific before you submit.
 
