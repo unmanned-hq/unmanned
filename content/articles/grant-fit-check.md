@@ -96,9 +96,10 @@ for you.
 I turned this routine into a free Claude skill, the
 [Grant Fit Screener](https://github.com/unmanned-hq/unmanned/tree/main/products/grant-fit-screener).
 Paste in the RFP and your organisation profile and it returns the priorities, the three scores, a
-verdict and next steps in a memo of under 400 words. If you leave out details about your
-organisation, it asks instead of guessing. It's MIT licensed, and its test cases and results are
-public.
+verdict and next steps in a memo of under 400 words. It only uses what's in the RFP and your
+profile. Anything missing is marked "Not stated" and counts as unconfirmed, so it won't give a
+High verdict on a guess. If you leave out the profile entirely, it asks for it. It's MIT licensed,
+and its test cases and results are public.
 
 I'm planning a fuller paid kit for grant writers. The [waitlist is on this page](../../grant-writers/#waitlist).
 
