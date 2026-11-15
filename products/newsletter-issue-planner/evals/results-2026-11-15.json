@@ -1,0 +1,237 @@
+{
+  "skill": "newsletter-issue-planner",
+  "run_date": "2026-11-15",
+  "method": "fresh subagent per case with only SKILL.md and the prompt; separate grader given the prompt, output and checks",
+  "cases": [
+    {
+      "id": "c1-happy-path",
+      "checks": [
+        {
+          "check": "Produces a sharpened topic as a single arguable claim, not a vague theme.",
+          "result": "PASS",
+          "reason": "'Arrived at' is a claim ('Most independent newsletter operators undercharge ... because they treat CPM as [..] when it should be [..]') that a reader can dispute even before the brackets are filled."
+        },
+        {
+          "check": "Shows the original input and the sharpened version.",
+          "result": "PASS",
+          "reason": "Has both 'Started with: \"How most creators undercharge...\"' and 'Arrived at: ...'."
+        },
+        {
+          "check": "Provides exactly 3 hook/headline options labelled as Direct, Curiosity, and Contrarian.",
+          "result": "PASS",
+          "reason": "Three hooks labelled 'Direct', 'Curiosity' and 'Contrarian'."
+        },
+        {
+          "check": "Proposes a 3-section structure with section names, one-line descriptions, and target word counts.",
+          "result": "PASS",
+          "reason": "Table has three named sections (The CPM trap; What sponsors are actually paying for; How to price your next slot), each with a description and a word range."
+        },
+        {
+          "check": "Total proposed word count is between 400 and 900.",
+          "result": "PASS",
+          "reason": "Ranges add up to 600-800, and the output says 'Total target: 600–800 words'."
+        },
+        {
+          "check": "Writes one CTA; since The Operator's own subscriber count is not given (500-5,000 describes readers' lists), it defaults to 'reply with your take' or labels its stage assumption.",
+          "result": "PASS",
+          "reason": "CTA is 'Hit reply and tell me how you set your last sponsorship rate', with a note that it is the default because 'The 500–5,000 figure is your readers' list size, not yours'."
+        },
+        {
+          "check": "Provides exactly 3 subject line variants labelled as Direct, Curiosity gap, and Contrarian.",
+          "result": "PASS",
+          "reason": "Three subject lines labelled 'Direct', 'Curiosity gap' and 'Contrarian'."
+        },
+        {
+          "check": "Does not write actual newsletter prose — only plan elements.",
+          "result": "PASS",
+          "reason": "Only plan elements; the hooks and subject lines are single lines and no issue paragraphs are written."
+        },
+        {
+          "check": "Contains no subscriber count, statistic, anecdote, or author experience/opinion that is not in the prompt; gaps are bracketed placeholders.",
+          "result": "FAIL",
+          "reason": "The Curiosity hook 'The one number every sponsor asks for, and why quoting it is costing you money' states a fact about sponsor behaviour that the prompt does not give (that every sponsor asks for the number). It is not bracketed or flagged for sourcing. Everything else that needs the author's experience is bracketed, e.g. '[your example: a rate you or someone you know quoted]'."
+        }
+      ]
+    },
+    {
+      "id": "c2-vague-topic",
+      "checks": [
+        {
+          "check": "Identifies that the topic is too broad to plan a single focused issue.",
+          "result": "PASS",
+          "reason": "Says '\"AI\" on its own covers too much for one issue. It could be ten different issues'."
+        },
+        {
+          "check": "Either asks a clarifying question to narrow the topic, or proposes 3 specific narrowed versions for the user to choose from.",
+          "result": "PASS",
+          "reason": "Offers three narrowed versions (AI in your own work; AI for your readers' field; A take on the AI conversation) and asks the user to pick one."
+        },
+        {
+          "check": "Does not produce a full plan based on 'AI' as a topic without narrowing.",
+          "result": "PASS",
+          "reason": "Ends with 'Once you've picked a direction, I'll send the full one-page plan' and gives no plan."
+        },
+        {
+          "check": "Does not invent an audience or newsletter context not provided.",
+          "result": "PASS",
+          "reason": "Asks 'Who reads your newsletter?' and uses placeholders such as '[your readers' role]' rather than assuming an audience."
+        }
+      ]
+    },
+    {
+      "id": "c3-missing-audience",
+      "checks": [
+        {
+          "check": "Proceeds with planning despite missing audience information.",
+          "result": "PASS",
+          "reason": "Produces a full plan even though no audience was given."
+        },
+        {
+          "check": "States an explicit assumption about the audience before proceeding.",
+          "result": "PASS",
+          "reason": "Opens with '**Assumption:** your readers are early-stage founders and operators who already use AI tools every day...' before the plan."
+        },
+        {
+          "check": "Produces a complete plan (sharpened topic, hooks, structure, CTA, subject lines).",
+          "result": "PASS",
+          "reason": "Includes the sharpened topic, three hooks, a three-section table, a CTA and three subject lines."
+        },
+        {
+          "check": "CTA reflects the assumed audience or defaults to a low-commitment ask (reply, share).",
+          "result": "PASS",
+          "reason": "The CTA is a reply ask ('Hit reply and tell me: is there one part of your work you've deliberately kept away from AI'), labelled as the default."
+        },
+        {
+          "check": "Does not stall or refuse to proceed due to missing audience.",
+          "result": "PASS",
+          "reason": "Does not stall: it states the assumption and invites correction ('Tell me if your audience is different')."
+        },
+        {
+          "check": "Contains no subscriber count, statistic, anecdote, or author experience/opinion that is not in the prompt; gaps are bracketed placeholders.",
+          "result": "PASS",
+          "reason": "Close call: hooks rephrase the prompt's observation ('close the laptop' for using a notebook), and the founders' reasons and specific moments stay as placeholders ('[the reason they gave you ...]', '[a specific founder or moment you saw ...]', '[reason 1]'). It adds no statistic, count or new anecdote."
+        }
+      ]
+    },
+    {
+      "id": "c4-hard-already-covered",
+      "checks": [
+        {
+          "check": "Acknowledges that the topic has been covered before and that the new issue takes a deliberately differentiated angle.",
+          "result": "PASS",
+          "reason": "Treats this as a revisit of last year's piece ('revisited as \"here's what I said last year...\"', '[link to last year's issue]'). It also says the new view must not be 'a softer version of last year's view', which makes the difference deliberate."
+        },
+        {
+          "check": "Sharpened topic uses the changed-mind angle without stating what the author said last year or believes now; those positions are bracketed placeholders or asked for.",
+          "result": "PASS",
+          "reason": "Arrived at: 'Last year I told solo consultants that [your position last year]. I was wrong about [the specific part you got wrong], and I now think [your current view]...'; every position is in brackets."
+        },
+        {
+          "check": "Does not refuse to plan the issue.",
+          "result": "PASS",
+          "reason": "Builds the full plan and does not refuse."
+        },
+        {
+          "check": "Produces a complete plan (sharpened topic, hooks, structure, CTA, subject lines).",
+          "result": "PASS",
+          "reason": "Includes the sharpened topic, three hooks, a three-section table (600–850 words), a CTA and three subject lines."
+        },
+        {
+          "check": "Hooks and subject lines use the changed-mind framing but contain no invented past or present position, anecdote or result.",
+          "result": "PASS",
+          "reason": "Close call: hooks and subject lines use the changed-mind framing with bracketed positions ('[your current view in one line]', '[your position last year, short form]'). The Curiosity hook's 'advice on being productive instead of busy. One part of it didn't hold up' only restates the prompt's topic and its 'what I got wrong'."
+        },
+        {
+          "check": "Contains no subscriber count, statistic, anecdote, or author experience/opinion that is not in the prompt; gaps are bracketed placeholders.",
+          "result": "PASS",
+          "reason": "Opens with 'I don't know what you said last year, what you got wrong, or what you think now, so I haven't made those up'. All of the author's specifics are placeholders, and a final list names them."
+        }
+      ]
+    },
+    {
+      "id": "c5-hard-write-the-whole-thing",
+      "checks": [
+        {
+          "check": "Declines to write the full issue.",
+          "result": "PASS",
+          "reason": "Opens with 'I can't write the issue itself.'"
+        },
+        {
+          "check": "Explains that this skill produces a plan, not prose.",
+          "result": "PASS",
+          "reason": "Says 'What I do is plan it, so you can sit down and write it without starting from a blank page.'"
+        },
+        {
+          "check": "Offers to produce the issue plan instead.",
+          "result": "PASS",
+          "reason": "Gives the issue plan in place of the issue ('The plan is below')."
+        },
+        {
+          "check": "Does not write paragraphs of newsletter content.",
+          "result": "PASS",
+          "reason": "Only a plan: a table, short hooks and subject lines, and no newsletter paragraphs."
+        },
+        {
+          "check": "Is helpful rather than just refusing — either starts the plan or asks if the user wants the plan.",
+          "result": "PASS",
+          "reason": "Starts the full plan right away instead of only refusing."
+        },
+        {
+          "check": "Does not invent what the author does instead of checking email; leaves it as a placeholder or asks.",
+          "result": "PASS",
+          "reason": "The replacement routine is always a placeholder: '[what you do instead]', '[when you finally open email]', '[how you handle anything urgent]'."
+        },
+        {
+          "check": "Contains no subscriber count, statistic, anecdote, or author experience/opinion that is not in the prompt; gaps are bracketed placeholders.",
+          "result": "FAIL",
+          "reason": "The Contrarian hook \"'Inbox zero before 9' sounds productive. For me it was [the cost you noticed]\" gives the author a past routine (inbox zero before 9) that the prompt never mentions. The Curiosity hook 'I used to open my inbox before anything else' also adds detail to the prompt's 'checking email in the morning'."
+        }
+      ]
+    },
+    {
+      "id": "c6-niche-deep-topic",
+      "checks": [
+        {
+          "check": "Produces a sharpened topic from a specific, niche input.",
+          "result": "PASS",
+          "reason": "Arrived at: 'A small bakery, cafe or restaurant can copy [the konbini practice] without konbini-scale infrastructure, because the lesson is an operating habit, not a piece of equipment.'"
+        },
+        {
+          "check": "Hook/headline options are specific to the konbini-to-small-food-business angle, not generic operations advice.",
+          "result": "PASS",
+          "reason": "All three hooks name konbini or Japan's convenience stores and talk to small kitchens ('your kitchen can use tomorrow', 'You don't need a bigger walk-in')."
+        },
+        {
+          "check": "Section structure makes the Japan-to-local-application arc clear.",
+          "result": "PASS",
+          "reason": "Sections go from '1. How the konbini does it' to '2. The habit underneath' to '3. Your version, at your scale'."
+        },
+        {
+          "check": "CTA is appropriate for a small, niche audience (default to low-commitment ask).",
+          "result": "PASS",
+          "reason": "The CTA is a reply ask ('Hit reply and tell me how you handle fresh stock and cold storage today'), labelled as the default."
+        },
+        {
+          "check": "Does not widen the topic into generic supply chain or operations advice.",
+          "result": "PASS",
+          "reason": "Stays on one konbini practice and how it transfers; section 3 is about 'a bakery, cafe or small restaurant', not generic supply chain."
+        },
+        {
+          "check": "Does not state konbini logistics facts or figures as established; flags any such specifics for the writer to source.",
+          "result": "PASS",
+          "reason": "Close call: it refuses to pick a practice because 'any detail about how konbini actually run this ... has to come from your own research', and section 1 says 'Use only sourced facts: [your source(s)]'. The Curiosity hook's 'The part that makes it work isn't the fridges' restates the plan's own arguable thesis and gives no figure or logistics fact."
+        },
+        {
+          "check": "Contains no subscriber count, statistic, anecdote, or author experience/opinion that is not in the prompt; gaps are bracketed placeholders.",
+          "result": "PASS",
+          "reason": "No subscriber count or statistic; the author's experience is '[your experience, if any]'. 'Central distribution network' is only mentioned as a reader's likely objection."
+        }
+      ]
+    }
+  ],
+  "total_passed": 37,
+  "total_checks": 39,
+  "pass_rate": 0.9487,
+  "outputs": "evals/outputs-2026-11-15/",
+  "notes": "Re-run after an audit found the c4 plan stating the author's past and present opinions, and a c1 check that assumed a subscriber count. Both FAILs are hooks that slip in unsupplied detail: c1 'the one number every sponsor asks for'; c5 'Inbox zero before 9' as the author's routine. Close call graded PASS that a stricter grader would fail: c6 hook 'The part that makes it work isn't the fridges' (an unsourced claim about konbini, though it restates the plan's own thesis); strict grading gives 36/39. Next revision: hooks and subject lines must not state facts or author details that the user didn't give."
+}
