@@ -1,10 +1,6 @@
 ---
 name: newsletter-issue-planner
-description: >
-  Plans a single newsletter issue from a topic or idea before any writing begins.
-  Use it when you know roughly what an issue should be about but haven't structured it.
-  Trigger phrases: "plan this issue", "newsletter plan", "structure this issue",
-  "what should I write about", "help me plan my next issue".
+description: Plans one newsletter issue from a rough topic before writing starts. Use when someone wants to plan or structure their next issue or isn't sure what to write.
 ---
 
 # Newsletter Issue Planner

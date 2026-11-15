@@ -1,10 +1,6 @@
 ---
 name: reviewer-response
-description: >
-  Drafts a point-by-point peer review response letter for academic journal resubmission.
-  Use it when you have reviewer comments and need a professional, structured response.
-  Trigger phrases: "respond to reviewers", "reviewer comments", "resubmission letter",
-  "peer review response", "address reviewer feedback".
+description: Drafts a point-by-point response letter to peer reviewers for a journal resubmission. Use when someone has reviewer comments and needs to respond to them.
 ---
 
 # Reviewer Response Letter

@@ -1,10 +1,6 @@
 ---
 name: grant-fit-screener
-description: >
-  Screens a grant opportunity for fit before the writer invests time in a full proposal.
-  Use it when you have an RFP (or a funding announcement) and a brief description of the
-  applying organisation. Trigger phrases: "should we apply", "is this a good fit",
-  "screen this RFP", "worth pursuing", "grant fit check".
+description: Screens a grant RFP for fit before you write a proposal. Use when someone asks whether to apply, if a grant is a good fit, or to screen an RFP against their organisation.
 ---
 
 # Grant Fit Screener
