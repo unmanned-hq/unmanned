@@ -7,7 +7,7 @@
 3. Every relative markdown link in the repo must point to a file or folder that exists.
 4. company/ledger.csv and company/metrics.csv must parse with the expected headers.
 5. Links in site/ HTML must be relative and point to files that exist. The site is served
-   from a subpath (ankit-jsr.github.io/unmanned/), so a link starting with "/" would 404.
+   from a subpath (unmanned-hq.github.io/unmanned/), so a link starting with "/" would 404.
 
 Exit code 0 = pass, 1 = fail.
 """

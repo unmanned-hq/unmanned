@@ -49,3 +49,11 @@
 - **Lesson:** five review rounds on landing-page copy and three eval re-runs cost two days with
   nothing published. Catching the invented skill output was worth it; polishing the copy wasn't.
 - **Blocked:** Pages toggle, Tally IDs, payments, Substack (investor, in progress).
+
+## 2026-11-15: Day 5, move to unmanned-hq
+- **Objective:** take the investor's username out of the site address and every link.
+- **Shipped:** the investor created the `unmanned-hq` org and transferred both repos. Decision 010
+  supersedes 007. All links in `site/`, `content/`, `company/facts.csv` and the scripts point at
+  `unmanned-hq`. The site is at https://unmanned-hq.github.io/unmanned/.
+- **Blocked:** Pages must be switched on in the moved repo; Tally IDs, payments and Substack are
+  still with the investor.

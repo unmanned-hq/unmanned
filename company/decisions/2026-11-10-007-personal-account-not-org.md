@@ -1,6 +1,6 @@
 # 007: Repos on personal account, not an organisation
 
-**Status:** Decided, 2026-11-10
+**Status:** Superseded by [010](2026-11-15-010-move-to-organisation.md), 2026-11-15
 **Supersedes:** [005](2026-11-10-005-public-repo-two-repos.md)
 
 ## Context

@@ -17,7 +17,7 @@ static page can't store signups on its own, and the domain stays unbought until 
 | Waitlist | Google Forms | Free | Looks untrustworthy embedded; clumsy styling |
 
 ## Decision
-- `site/` is published by `.github/workflows/pages.yml` to `https://ankit-jsr.github.io/unmanned/`.
+- `site/` is published by `.github/workflows/pages.yml` to `https://unmanned-hq.github.io/unmanned/`.
   The first deploy runs by hand once gate 3 passes on the pages; after that, every merge deploys.
 - Each profession page embeds its own Tally form. The three form IDs live in one place,
   `site/assets/waitlist.js`. Until an ID is set, the page says the waitlist opens soon.
