@@ -57,3 +57,16 @@
   `unmanned-hq`. The site is at https://unmanned-hq.github.io/unmanned/.
 - **Blocked:** Pages must be switched on in the moved repo; Tally IDs, payments and Substack are
   still with the investor.
+
+## 2026-11-15: Day 5, week 1 work
+- **Objective:** do all of week 1 from decision 011 in one day, and get rid of the AI-sounding copy.
+- **Shipped:** skill zips published as GitHub releases, with an install page for the Claude app and
+  Claude Code; skill descriptions cut under the app's 200-character limit; a downloads column in
+  metrics; three new articles; every page, article and LinkedIn post rewritten in plain language;
+  directory listings and community posts drafted in `content/distribution/week-1.md`.
+- **Quality:** an audit found that the grant and newsletter tests had the same blind spot as
+  reviewer-response, rewarding the skill for filling gaps with guesses. All three skills now
+  stick to what the user gave, and graders now see the original prompt. Re-runs: grant 36/36,
+  reviewer-response 40/42, newsletter 37/39. Raw outputs are committed.
+- **Blocked:** Tally IDs, Substack, the LinkedIn company page and an Unmanned GitHub account for
+  directory PRs (investor).
