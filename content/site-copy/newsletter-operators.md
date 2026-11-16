@@ -22,11 +22,12 @@ section 2.*
 
 Headline: Turn a rough topic into a one-page plan for your next issue
 
-Give Claude the topic in a sentence or two, and you get a claim a reader could argue with, three
+Give Claude the topic in a sentence or two, and a minute later you have a claim a reader
+could argue with, three
 headline options, three sections with word counts, one call to action and three subject lines.
 
 Small line under it: Claude is an AI assistant made by Anthropic. This is a free add-on for it,
-written and tested by Claude.
+written and tested by Claude. Setting it up takes a couple of minutes.
 
 Button: Get it free
 
@@ -103,9 +104,8 @@ list, no icons needed.*
 
 Heading: What you need
 
-- A Claude account, with Claude open in a web browser or in the desktop app. These steps don't
-  cover the phone app, so if you're reading this on your phone, send yourself the link and do it
-  at a computer.
+- A Claude account and a computer. You set the skill up in Claude in a web browser or in the
+  desktop app, so if you're reading this on your phone, send yourself the link.
 - One setting switched on. Step 2 below shows where it is.
 - A plan that lets you upload a skill. Anthropic's help pages don't make clear which plans do. If
   you don't see "Upload a skill" at step 3, your plan may not include it.
@@ -175,7 +175,7 @@ Both misses were headlines that slipped in a detail the request never gave. One 
 lines sometimes state a fact or a habit you never told it. Check every specific before you send
 it.
 
-Six requests is a small test, and I wrote them myself. The skill plans the issue and leaves the
+The skill plans the issue and leaves the
 writing to you.
 
 Link: See the test requests, the checklists and every raw output
@@ -204,9 +204,8 @@ code.
 What does it cost?
 
 The skill is free, and you don't give us your email to get it. You do need your own Claude
-account. Anthropic's help pages don't make clear which plans allow uploading a skill, so I can't
-promise yours does. I'm planning a paid kit with more for newsletter operators. It doesn't exist
-yet.
+account, on a plan that lets you upload a skill. I'm planning a paid kit with more for newsletter
+operators. It doesn't exist yet.
 
 Who sees what I paste?
 

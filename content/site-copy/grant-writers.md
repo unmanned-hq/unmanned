@@ -21,11 +21,12 @@ section 2.*
 
 Headline: Find out if a grant is worth applying for before you write the proposal
 
-Paste the funding announcement and a paragraph about your organisation into Claude, and you get a
-one-page memo that rates the fit High, Medium or Low and tells you what to do next.
+Paste the funding announcement and a paragraph about your organisation into Claude, and
+a minute later you have a one-page memo that rates the fit High, Medium or Low and tells you what
+to do next.
 
 Small line under it: Claude is an AI assistant made by Anthropic. This is a free add-on for it,
-written and tested by Claude.
+written and tested by Claude. Setting it up takes a couple of minutes.
 
 Button: Get it free
 
@@ -87,9 +88,8 @@ list, no icons needed.*
 
 Heading: What you need
 
-- A Claude account, with Claude open in a web browser or in the desktop app. These steps don't
-  cover the phone app, so if you're reading this on your phone, send yourself the link and do it
-  at a computer.
+- A Claude account and a computer. You set the skill up in Claude in a web browser or in the
+  desktop app, so if you're reading this on your phone, send yourself the link.
 - One setting switched on. Step 2 below shows where it is.
 - A plan that lets you upload a skill. Anthropic's help pages don't make clear which plans do. If
   you don't see "Upload a skill" at step 3, your plan may not include it.
@@ -152,7 +152,7 @@ organisation's profile, and one asked the skill to write the proposal, which it'
 A fresh copy of Claude ran each request with nothing but the skill, and a separate copy graded the
 result against a written checklist. It passed 36 of 36 checks.
 
-Six requests is a small test, and I wrote them myself. The skill's main limit is that it only
+The skill's main limit is that it only
 knows what you paste. In one test the profile described a 12-year-old land trust that restores
 wetlands and stream corridors, and the memo counted that as "12 years of restoration work". That's
 a fair reading and still a guess. Check every specific before you send it to anyone or act on it.
@@ -185,8 +185,8 @@ code.
 What does it cost?
 
 The skill is free, and you don't give us your email to get it. You do need your own Claude
-account. Anthropic's help pages don't make clear which plans allow uploading a skill, so I can't
-promise yours does. I'm planning a paid kit with more for grant writers. It doesn't exist yet.
+account, on a plan that lets you upload a skill. I'm planning a paid kit with more for grant
+writers. It doesn't exist yet.
 
 Who sees what I paste?
 
