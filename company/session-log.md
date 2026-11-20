@@ -87,3 +87,15 @@
   moved to the private repo.
 - **Note:** Task 01's kits review was a self-review by the session that wrote the code. Task 05
   replaces it.
+
+## 2026-11-16: Writer session, Task 02
+- **Objective:** replace the newsletter page's and article's example plan with real output from
+  the current newsletter-issue-planner skill (task file is on the `ops/roles` branch, PR #12).
+- **Shipped:** ran the current skill once in a fresh subagent on a sample request and pasted the
+  output unedited into `site/newsletter-operators/index.html` and
+  `content/articles/plan-your-newsletter-issue.md`. The article's step 1 and step 2 examples now
+  quote the same output, and an unsourced line about what small lists respond to is gone.
+  Gate 1 passes. No number in metrics or facts changed.
+- **Blocked:** gate 2 waits for a separate Reviewer session (roles in PR #12). The work is on the
+  session branch `ccr-49f0eb4e-70s6w2`, not `writer/newsletter-examples`, because this session
+  can only push there.
