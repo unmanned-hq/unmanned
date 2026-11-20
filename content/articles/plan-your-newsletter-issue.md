@@ -19,9 +19,9 @@ Below is a one-page plan for getting from a topic to a point before you draft an
 Write your topic down, then keep narrowing until a reasonable reader could argue with it.
 
 - Topic: *sponsorship pricing*
-- Narrower: *small newsletters price sponsorships badly*
-- Claim: *small newsletters undercharge because they price on CPM instead of on what their
-  sponsors actually get from a small, trusted list*
+- Narrower: *most small newsletters price sponsorships badly*
+- Claim: *small newsletters price sponsorships badly because they borrow the per-thousand (CPM)
+  maths built for big lists, when they should charge a flat fee based on who their readers are*
 
 If nobody could disagree with it, it isn't a claim yet. If you can't support it, it's the wrong
 claim, so narrow in a different direction.
@@ -30,10 +30,11 @@ claim, so narrow in a different direction.
 
 The headline and opening line are there to keep the right reader reading. Write three:
 
-- A direct one that says the point. *You're pricing sponsorships on the wrong metric.*
-- A curiosity hook that opens a gap the issue closes. *Why can a 1,000-subscriber newsletter
-  charge more than one with 50,000?*
-- A contrarian one that names the belief you're challenging. *CPM is a TV metric. Stop using it.*
+- A direct one that says the point. *Small newsletters shouldn't price sponsorships by CPM.*
+- A curiosity hook that opens a gap the issue closes. *The pricing habit that makes a small
+  newsletter look cheaper than it is.*
+- A contrarian one that names the belief you're challenging. *Your list isn't too small to charge
+  properly. Your pricing formula is the problem.*
 
 Pick whichever suits your list. Another one will often make a good subject line.
 
@@ -50,9 +51,9 @@ issue.
 
 ## 4. Choose exactly one call to action
 
-Ask readers to reply, share, buy and follow, and most will do none of them. For small lists, a
-low-commitment ask like "hit reply and tell me how you price" usually beats a link. The replies
-also tell you what to write next.
+Ask readers to reply, share, buy and follow, and most will do none of them. If you don't know
+what your list responds to yet, ask for a reply: "how did you arrive at your current sponsorship
+price?" The replies also tell you what to write next.
 
 ## 5. Draft three subject lines
 
@@ -61,15 +62,54 @@ issues and you'll learn what your list opens.
 
 ## The finished plan
 
-| Part | Example |
-| --- | --- |
-| Claim | Small newsletters undercharge because they price on CPM, not on what their list delivers |
-| Hook | You're pricing sponsorships on the wrong metric |
-| Structure | The CPM trap (200) / Price on outcomes (300) / How to reprice (200) |
-| CTA | Hit reply with how you price today |
-| Subject lines | How to reprice your sponsorships / The number sponsors actually track / Industry rates are a trap for small lists |
+This is what the free skill returned when I gave it the topic from step 1. The request was: "Plan
+my next issue. Topic: most small newsletters price sponsorships badly. My newsletter is for people
+who run newsletters." The output is pasted as it came back. The claim and the hooks in the steps
+above are taken from it.
 
-With that table filled in, the draft is mostly a matter of filling in the sections.
+> **Assumption:** Your readers are solo or small-team newsletter operators who sell, or are about to sell, their own sponsorships. You gave the audience as "people who run newsletters"; I narrowed it to those who handle sponsorships themselves.
+>
+> **Sharpened topic**
+>
+> - **Starting point:** "Most small newsletters price sponsorships badly."
+> - **Sharpened:** Small newsletters price sponsorships badly because they borrow the per-thousand (CPM) maths built for big lists, when they should charge a flat fee based on who their readers are.
+>
+> This is my proposed reading of "badly", not something you told me. If you meant something else (too low, no rate card, discounting too quickly), tell me and I'll re-plan around that.
+>
+> **Hook/headline options**
+>
+> - **Direct:** Small newsletters shouldn't price sponsorships by CPM
+> - **Curiosity:** The pricing habit that makes a small newsletter look cheaper than it is
+> - **Contrarian:** Your list isn't too small to charge properly. Your pricing formula is the problem.
+>
+> **Issue structure**
+>
+> | Section | Description | Words |
+> | --- | --- | --- |
+> | 1. The borrowed formula | How small operators usually arrive at a price, and why list size multiplied by a going rate undersells a small list. Anchor it with [a real rate or pricing example you have seen or used]. | 150 |
+> | 2. What a sponsor is actually buying | The case for pricing on audience fit and the sponsor's outcome instead of raw reach. Support it with [your evidence: a sponsor conversation, a result, or a comparison you can stand behind]. | 350 |
+> | 3. Re-pricing your next slot | A short, practical way for the reader to set a flat fee and present it to a sponsor, using [the steps or rule of thumb you actually recommend]. | 200 |
+>
+> Total: 700 words.
+>
+> **CTA**
+>
+> Reply with your take: how did you arrive at your current sponsorship price?
+>
+> I don't know your subscriber count, so this is the default. If you have 500 or more, tell me and I'll swap in a purchase, hire or referral ask.
+>
+> **Subject lines**
+>
+> - **Direct:** Why CPM pricing fails small newsletters
+> - **Curiosity gap:** You priced your sponsorship slot by list size, and...
+> - **Contrarian:** A small list is not a reason to charge less
+>
+> **Before you write**
+>
+> The bracketed placeholders need your own material. I have not supplied any rates, results or statistics, because you didn't give me any.
+
+The square brackets are where your own rates, results and examples go. The skill leaves them
+empty because it only works with what you told it.
 
 ## The free skill
 
