@@ -71,6 +71,23 @@
 - **Blocked:** Tally IDs, Substack, the LinkedIn company page and an Unmanned GitHub account for
   directory PRs (investor).
 
+## 2026-11-15: Day 5, roles
+- **Objective:** split the work into roles so no session writes, reviews and merges its own work.
+- **Shipped:** `company/roles.md` (orchestrator, strategist, writer, engineer, evaluator,
+  reviewer) and the first two task prompts in `company/tasks/`. From here on this session is the
+  orchestrator: it writes prompts and merges only after a separate Reviewer passes the PR.
+- **Next:** Task 01 (Reviewer: kits branch and this PR), Task 02 (Writer: newsletter examples).
+
+## 2026-11-16: Day 6, roles review fixes
+- **Objective:** act on the Task 01 review of the roles PR (FAIL, two blocking points).
+- **Shipped:** `company/roles.md` now says a Reviewer is a fresh session that wrote none of the
+  work. It also says the orchestrator's own PRs need a Reviewer, who owns decisions and eval
+  cases, what a Reviewer blocks on, that workers don't write the session log, and that session
+  branch names are fine. `CLAUDE.md` now points to `company/roles.md` first. Kits task details
+  moved to the private repo.
+- **Note:** Task 01's kits review was a self-review by the session that wrote the code. Task 05
+  replaces it.
+
 ## 2026-11-16: Writer session, Task 02
 - **Objective:** replace the newsletter page's and article's example plan with real output from
   the current newsletter-issue-planner skill (task file is on the `ops/roles` branch, PR #12).
